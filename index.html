@@ -9,6 +9,10 @@
     <h2>Web Security</h2>
     <p id="web-security-question">How would you advise a potential client to secure his/her website from web security attacks? Note: the word count for your answer should not be greater than 250 words</p>
     <p id="web-security-answer">To counter cross site scripting i would advise the client to not use any unnecessary use of innerHTML method in javascript and filter the input as harshly as possible to avoid xss attacks.
+      it is also important to sanitize the data that the application accepts, this is done through the sanitize-html package that is in NodeJS and there is even a sanitization of SQL code called an ORM or object related mapping.
+      For securing the admin rights to the site it is important to also use two-factor authentication devices, one method to get it done is by using OneLogin or Okta.
+      it is also important that the third-party applications are trusted and tested, this can be done through checking out how many downloads the application gets.
+      To protect users from leaving valuable credentials in the browser for a long time one could also consider using an automatic user timeout.
 
     </p>
   </body>
