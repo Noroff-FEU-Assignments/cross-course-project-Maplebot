@@ -1,19 +1,32 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>My first website</title>
-  </head>
-  <body>
-    <h1>Hello world!</h1>
-    <p>Welcome to my first website.</p>
-    <h2>Web Security</h2>
-    <p id="web-security-question">How would you advise a potential client to secure his/her website from web security attacks? Note: the word count for your answer should not be greater than 250 words</p>
-    <p id="web-security-answer">To counter cross site scripting i would advise the client to not use any unnecessary use of innerHTML method in javascript and filter the input as harshly as possible to avoid xss attacks.
-      it is also important to sanitize the data that the application accepts, this is done through the sanitize-html package that is in NodeJS and there is even a sanitization of SQL code called an ORM or object related mapping.
-      For securing the admin rights to the site it is important to also use two-factor authentication devices, one method to get it done is by using OneLogin or Okta.
-      it is also important that the third-party applications are trusted and tested, this can be done through checking out how many downloads the application gets.
-      To protect users from leaving valuable credentials in the browser for a long time one could also consider using an automatic user timeout.
-
-    </p>
-  </body>
+<html lang="en-GB">
+    <head>
+        <link href="style.css" rel="stylesheet">
+        <title>Home page</title>
+        <meta name="description" content="this is the home page of the museum">
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="index.html">home</a></li>
+                    <li><a href="contact.html">contact</a></li>
+                    <li><a href="about.html">about</a></li>
+                    <li><a href="exhibits.html">exhibits</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div class="museum_box">
+        <h1 class="community_heading">Community Science Museum</h1>
+        <h2 class="explore_heading">"Explore together"</h2>
+        <p class="museum_paragraph">Come join us at the Community Science Museum where we’re committed to making science accessible to all.
+            Over the course of human history, science has developed from our early understanding of fire, wind, water, and earth to exploring everything from galaxies far away to the very building blocks of life itself.
+            The aim of our museum is to create a space where everyone can experience the wonders of our discoveries and perhaps even ignite a lifelong passion to continue the exploration of the world around us.
+            We believe science should not be confined to the textbook, but brought to live through exhibits. This is why we have over 1000 different exhibits on the many varied subjects of science to explore. Many of these exhibits are designed for you to interact with and play around to see science come to life (apart from the dinosaur exhibits – they only come to life at night when everyone’s gone home).</p>
+            <img src="images/scott-webb.jpg" class="webb" alt="image of a museum">
+            </div>
+        </main>
+    </body>
+    <footer</footer>
 </html>

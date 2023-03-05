@@ -1,0 +1,240 @@
+/*The main styles*/
+*{
+    padding:0;
+    margin:0;
+}
+body{
+    background-color: rgb(92, 0, 92);
+}
+nav ul{
+    list-style: none;
+    background-color: purple;
+    display:flex;
+}
+nav ul li{
+    margin:2%;
+    padding:20px;
+}
+nav ul li a{
+    color:white;
+    text-decoration: none;
+}
+nav ul li:hover{
+    background-color: blueviolet;
+}
+nav ul li:active{
+    background-color: rgb(116, 33, 194);
+}
+p{
+    margin:2%;
+    font-size: large;
+    color:white;
+    line-height: 1.5em;
+}
+h1{
+    color:white;
+    margin:2%;
+}
+h2{
+    color:white;
+    margin:2%;
+}
+/*community main*/
+.museum_box{
+    position:relative;
+    top:200px;
+    display:grid;
+    grid-template-areas: "community_heading webb"
+                            "explore_heading webb"
+                            "museum_paragraph webb";
+}
+.webb{
+    margin:0 auto;
+    display:block;
+    height:400px;
+    width:1100px;
+    grid-area: webb;
+}
+.community_heading{
+    grid-area: community_heading;
+}
+.explore_heading{
+    grid-area: explore_heading;
+}
+.museum_paragraph{
+    grid-area: museum_paragraph;
+}
+
+
+/* about page */
+.zeller{
+    width:400px;
+    grid-area: zeller;
+    margin:40px;
+}
+.paragraph1{
+    grid-area: paragraph1;
+}
+.paragraph2{
+    grid-area: paragraph2;
+}
+.paragraph3{
+    grid-area: paragraph3;
+}
+.box{
+    display:grid;
+    grid-template-areas:"explore zeller"
+                        "for_kids zeller"
+                        "paragraph1 zeller"
+                        "for_teachers zeller"
+                        "paragraph2 zeller"
+                        "researchers zeller"
+                        "paragraph3 zeller";
+}
+.mammoth{
+    width:600px;
+    display:block;
+    margin:0 auto;
+}
+.box_contact{
+    
+}
+/* exhibits page */
+.box_exhibits{
+    display:grid;
+    grid-template-areas:"exhibition_spaces ."
+                        "biology_medicine ."
+                        "biology people"
+                        "cosmology ."
+                        "cosmology_paragraph cosmology_picture"
+                        "robotics_heading ."
+                        "robotics_paragraph robotics_picture"
+                        "ecology_heading ."
+                        "ecology_paragraph ecology_picture"
+                        "evolution_heading ."
+                        "evolution_paragraph evolution_picture";
+}
+.biology{
+    grid-area: biology;
+}
+.cosmology{
+    grid-area: cosmology;
+}
+.cosmology_paragraph{
+    grid-area: cosmology_paragraph;
+}
+.cosmology_picture{
+    grid-area: cosmology_picture;
+    width:400px;
+}
+.biology_medicine{
+    grid-area: biology_medicine;
+}
+.people{
+    grid-area: people;
+    width:400px;
+}
+.robotics_heading{
+    grid-area: robotics_heading;
+}
+.robotics_paragraph{
+    grid-area: robotics_paragraph;
+}
+.robotics_picture{
+    grid-area: robotics_picture;
+    width:400px;
+}
+.ecology_heading{
+    grid-area: ecology_heading;
+}
+.ecology_paragraph{
+    grid-area: ecology_paragraph;
+}
+.ecology_picture{
+    grid-area: ecology_picture;
+    width:400px;
+}
+.evolution_paragraph{
+    grid-area: evolution_paragraph;
+}
+.evolution_heading{
+    grid-area: evolution_heading;
+}
+.evolution_picture{
+    grid-area: evolution_picture;
+    width:400px;
+}
+/* contacts page */
+
+.library{
+    width:600px;
+    margin:0 auto;
+    display:block;
+    border-radius: 1em;
+}
+.location{
+    width:600px;
+    margin:40px;
+    border-radius: 1em;
+    display:block;
+}
+.opening_hours{
+    word-break:break-word;
+    width:220px;
+}
+
+@media (max-width:900px){
+    
+    .library{
+        width:400px;
+    }
+    .location{
+        width:400px;
+    }
+    .box_exhibits{
+        display:grid;
+        grid-template-areas:"exhibition_spaces"
+                            "biology_medicine"
+                            "biology"
+                            "people" 
+                            "cosmology"
+                            "cosmology_paragraph"
+                            "cosmology_picture"
+                            "robotics_heading"
+                            "robotics_paragraph"
+                            "robotics_picture"
+                            "ecology_heading"
+                            "ecology_paragraph"
+                            "ecology_picture"
+                            "evolution_heading"
+                            "evolution_paragraph"
+                            "evolution_picture";
+}
+}
+@media(max-width:1400px){
+    .museum_box{
+        grid-template-areas: "community_heading"
+                                "explore_heading"
+                                "museum_paragraph"
+                                "webb";
+                            }
+}
+@media(max-width:1100px){
+    
+    .webb{
+        width:400px;
+    }
+    .mammoth{
+        width:400px;
+    }
+    .box{
+        grid-template-areas: "explore"
+                                "for_kids"
+                                "paragraph1"
+                                "for_teachers"
+                                "paragraph2"
+                                "researchers"
+                                "paragraph3"
+                                "zeller";
+    }
+}
